@@ -21,7 +21,6 @@ app.post("/api/gen", async(req, res)=>{
     const {prompt} = req.body;
     const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
     const result = await model.generateContent(`${prompt}. Give answer in 1-2 lines`);
-    console.log("The result is :-", result);
     res.json({text : result.response.text()});
   }catch(err)
   {
