@@ -1,4 +1,54 @@
+body{
+    background-color: black;
+}
 .response{
     display: flex;
     flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    margin-top: 20px;
+    border-color: black;
+    text-align: center;
+}
+
+.response-form{
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+
+.response-input{
+    border-radius: 18px;
+    border-color: pink;
+    border-width: 4px;
+    text-align: center;
+    padding : 10px 10px;
+    outline : none;
+    transition: 400ms;
+}
+
+.response-input:focus{
+    border-color : #FF00FF;
+    box-shadow : 0 0 10px #FF00FF;
+}
+
+.response-button{
+    border-radius: 18px;
+    cursor:pointer;
+}
+
+.response-button:hover{
+    background-color : pink;
+}
+
+.response-button:focus{
+    border-color : #FF00FF;
+    box-shadow : 0 0 10px #FF00FF;
+}
+
+.response-generated{
+    /* width : full; */
+    width: 40%;
+    margin-top: 15px;
+    color: white;
 }

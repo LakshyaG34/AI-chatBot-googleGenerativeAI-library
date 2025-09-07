@@ -1,4 +1,5 @@
 import Response from './components/response';
+import './App.css'
 
 function App() {
   return (

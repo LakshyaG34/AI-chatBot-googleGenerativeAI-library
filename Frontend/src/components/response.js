@@ -1,4 +1,5 @@
 import React, {useState} from "react"
+import "./response.css"
 
 const Response = () =>
 {
@@ -19,11 +20,11 @@ const Response = () =>
     }
     return(
         <div className="response">
-            <form onSubmit = {handleSubmit}>
-                <input placeholder = "Enter your Prompt" type="text" value={prompt} onChange={(e)=>setPrompt(e.target.value)}/>
-                <button type="submit">Generate</button>
+            <form onSubmit = {handleSubmit} className = "response-form">
+                <input placeholder = "Enter your Prompt" type="text" value={prompt} onChange={(e)=>setPrompt(e.target.value)} className="response-input"/>
+                <button type="submit" className="response-button">Generate</button>
             </form>
-            <span>{res}</span>
+            <span className = "response-generated">{res}</span>
         </div>
     )
 }
