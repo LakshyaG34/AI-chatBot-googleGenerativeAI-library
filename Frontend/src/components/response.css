@@ -4,7 +4,6 @@ body{
 .response{
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
     align-items: center;
     margin-top: 20px;
     border-color: black;
@@ -51,4 +50,17 @@ body{
     width: 40%;
     margin-top: 15px;
     color: white;
+}
+
+.response-pulse{
+    animation: pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.4;
+  }
 }
