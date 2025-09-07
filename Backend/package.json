@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "server": "nodemon server.js"
+    "server": "nodemon server.js",
+    "build": "cd ../Frontend && npm install && npm run build"
   },
   "keywords": [],
   "author": "",
